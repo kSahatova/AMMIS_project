@@ -6,7 +6,7 @@ from typing import List
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import RobustScaler, FunctionTransformer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
-from category_encoders.count import CountEncoder
+from .count import CountEncoder
 
 from sklearn.compose import ColumnTransformer
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -21,7 +21,7 @@ def read_data(dir_path, return_X_y=True):
     if return_X_y:
         predictors = [col for col in train_df.columns if col != 'target']
         X = train_df.loc[:, predictors]
-        y = train_df.loc[:, 'target']
+        y = train_df.loccategory_encoders[:, 'target']
 
         return X, y
 

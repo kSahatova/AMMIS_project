@@ -6,13 +6,13 @@ import os.path as osp
 from sklearn.preprocessing import MinMaxScaler
 
 
-processed_data_dir = 'processed_telco_churn_data'
-X_train = joblib.load(osp.join(processed_data_dir, 'X_train.joblib'))
-X_test = joblib.load(osp.join(processed_data_dir, 'X_test.joblib'))
+processed_data_dir = 'processed_data'
+X_train = joblib.load(osp.join(processed_data_dir, 'x_train.joblib'))
+X_test = joblib.load(osp.join(processed_data_dir, 'x_test.joblib'))
 y_train = joblib.load(osp.join(processed_data_dir, 'y_train.joblib'))
 y_test = joblib.load(osp.join(processed_data_dir, 'y_test.joblib'))
 
-model = joblib.load('model/fitted_xgboost.joblib')
+model = joblib.load('pretrained_models/xgboost_telcochurn.joblib')
 
 # Calculate marginal contribution
 
@@ -24,7 +24,7 @@ shap_values = explainer.shap_values(X_test)
 
 
 # Calculate feature contribution
-# todo: Preliminary concepts (entities) of the conceptual model that were distinguished
+# todo: Preliminary concepts (entities) of the conceptual pretrained_models that were distinguished
 concepts_attributes = {'Customer': ['Age_group1', 'Age_group2',
                                     'Age_group3', 'Age_group4',
                                     'Age_group5', 'Gender_F',

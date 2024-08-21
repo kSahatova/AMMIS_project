@@ -21,7 +21,7 @@ def cpath(model, test_set, k):
     :return:
     """
 
-    # [1.] Get the predictions of the model ----------------------------------------------------------------------------
+    # [1.] Get the predictions of the pretrained_models ----------------------------------------------------------------------------
     labels = model.predict(test_set)
 
     # [2.] Init the variables ------------------------------------------------------------------------------------------
@@ -91,7 +91,7 @@ def cpaths(model, data, target, k=4, n_iter=1000):
     """
     Cpaths - Many Cpaths
 
-    :param model: Any model that contains the methods fit() and predict(), such as in scikit-learn
+    :param model: Any pretrained_models that contains the methods fit() and predict(), such as in scikit-learn
     :param data: input data for prediction
     :param target: Target values
     :param k: Number of samples
