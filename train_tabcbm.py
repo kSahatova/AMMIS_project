@@ -159,6 +159,7 @@ tab_cbm_params = dict(
     concept_generator_units=[64],
     rec_model_units=[64],
 )
+
 # Mask Generator Self-supervised Training
 
 # Next, we proceed to do the self-supervised training of the mask

@@ -9,14 +9,14 @@ from sklearn.preprocessing import MinMaxScaler
 
 
 # loading test data
-main_dir = r'D:\PycharmProjects\AMMISproject\SuperImposition'
-processed_data_dir = 'processed_data'
+main_dir = r'D:\PycharmProjects\AMMISproject'
+processed_data_dir = 'data\processed_data'
 dataset = 'dataco'
 X_test = joblib.load(osp.join(main_dir, processed_data_dir, dataset, 'x_test.joblib'))
 y_test = joblib.load(osp.join(main_dir, processed_data_dir, dataset, 'y_test.joblib'))
 
 # loading a pretrained model
-pretrained_models_dir = 'pretrained_models'
+pretrained_models_dir = 'SuperImposition\pretrained_models'
 model = joblib.load(osp.join(main_dir, pretrained_models_dir, 'dt_dataco.joblib'))
 
 # Calculate marginal contribution
@@ -110,6 +110,7 @@ display(combined_features_contribution)
 combined_f_html = combined_features_contribution.to_html()
 with open("combined_features_contribution.html", "w") as f:
     f.write(combined_f_html)
+
 
 with open("scaled_mean_fcs.html", "w") as f:
     f.write(html)

@@ -1,7 +1,7 @@
 AMMIS_project/CPATH/.idea
 __pycache__
 ../.idea
-SuperImposition/fraud_transactions/PS_20174392719_1491204439457_log.csv
+SuperImposition/__pycache__
 venv
 data_preprocessing.py
 .idea
