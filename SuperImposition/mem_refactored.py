@@ -61,8 +61,8 @@ concepts_attributes = {}
 for concept, features in aggregated_concepts.items():
     extended_features = []
     for value in features:
-        if value in X_test.columns:
             [extended_features.append(column) for column in X_test.columns if value in column]
+   
     concepts_attributes[concept] = extended_features
 
 if len(X_test.shape) != len(shap_values.shape):
