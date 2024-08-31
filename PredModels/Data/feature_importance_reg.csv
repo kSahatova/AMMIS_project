@@ -1,0 +1,218 @@
+Feature,Importance
+Days for shipment (scheduled),0.18077451
+Category Name_Pet Supplies,0.012142213
+Category Name_Computers,0.0119881565
+Department Name_Fitness,0.011944129
+Category Name_Men's Clothing,0.011831667
+Category Name_Video Games,0.011136909
+Product Quantity_Nike Dri-FIT Crew Sock 6 Pack,0.008457355
+Product Quantity_Nike Men's Deutschland Weltmeister Winners Bl,0.008036842
+Product Quantity_Garmin Approach S3 Golf GPS Watch,0.007978123
+Product Quantity_adidas Kids' F5 Messi FG Soccer Cleat,0.007837166
+Category Name_Girls' Apparel,0.007671124
+Category Name_Children's Clothing,0.0075913058
+Department Name_Footwear,0.0075449767
+Category Name_Trade-In,0.007443004
+Category Name_Books ,0.0073485444
+Customer Segment_Home Office,0.007157734
+Product Quantity_Diamondback Women's Serene Classic Comfort Bi,0.0071540168
+Order Status_PENDING,0.0069106463
+Category Name_Electronics,0.006880863
+Department Name_Technology,0.006802378
+Type_CASH,0.0067997263
+Order Status_ON_HOLD,0.006567841
+Product Quantity_Team Golf Pittsburgh Steelers Putter Grip,0.0065622674
+Total Sales,0.00656196
+Category Name_Men's Footwear,0.006437637
+Category Name_Camping & Hiking,0.006409105
+Total Benefit per Order,0.0064070933
+Total Order Item Product Price,0.006357054
+Category Name_Crafts,0.006340292
+Order Status_COMPLETE,0.0061993706
+Product Quantity_Nike Men's Dri-FIT Victory Golf Polo,0.006187757
+Department Name_Golf,0.006170201
+Customer Segment_Corporate,0.006136446
+Product Quantity_Hirzl Women's Soffft Flex Golf Glove,0.0061248844
+Total Order Item Discount,0.0061215465
+Category Name_Water Sports,0.0061003487
+Product Quantity_Fitbit The One Wireless Activity & Sleep Trac,0.006076059
+Product Quantity_Nike Men's CJ Elite 2 TD Football Cleat,0.0060547614
+Category Name_Women's Apparel,0.0060324385
+Product Quantity_Under Armour Men's Tech II T-Shirt,0.006018
+Product Quantity_adidas Men's Germany Black Crest Away Tee,0.0059753074
+Product Quantity_Team Golf San Francisco Giants Putter Grip,0.005942327
+Product Quantity_TaylorMade 2014 Purelite Stand Bag,0.0059400382
+Type_TRANSFER,0.005928477
+Total Order Item Total,0.005900085
+Product Quantity_Nike Men's Free 5.0+ Running Shoe,0.005874567
+Product Quantity_Under Armour Girls' Toddler Spine Surge Runni,0.0058269766
+Market_LATAM,0.0058044177
+Category Name_Indoor/Outdoor Games,0.0058040125
+Distance (km),0.005715404
+Product Quantity_Perfect Fitness Perfect Rip Deck,0.0056777406
+Shipping Mode_Second Class,0.005674659
+Department Name_Apparel,0.0056597097
+Product Quantity_O'Brien Men's Neoprene Life Vest,0.0055917436
+Product Quantity_Under Armour Hustle Storm Medium Duffle Bag,0.005576721
+Order Latitude,0.005537015
+Category Name_Shop By Sport,0.005528336
+Category Name_Golf Gloves,0.0055208225
+Product Quantity_Glove It Imperial Golf Towel,0.005514979
+Type_DEBIT,0.0054753455
+Market_USCA,0.005472676
+Product Quantity_Pelican Sunstream 100 Kayak,0.005465138
+Category Name_Kids' Golf Clubs,0.0054389606
+Order Longitude,0.0053929677
+Department Name_Fan Shop,0.0053624935
+Product Quantity_Nike Women's Tempo Shorts,0.005346622
+Product Quantity_Nike Men's Free TR 5.0 TB Training Shoe,0.005314224
+Order Status_PENDING_PAYMENT,0.0052640187
+Order Status_PAYMENT_REVIEW,0.0052526654
+Product Quantity_Elevation Training Mask 2.0,0.005183212
+Product Quantity_Nike Men's Fingertrap Max Training Shoe,0.0051778117
+Product Quantity_Clicgear 8.0 Shoe Brush,0.005138161
+Product Quantity_Merrell Men's All Out Flash Trail Running Sho,0.0051114094
+Product Quantity_Under Armour Kids' Mercenary Slide,0.0051081995
+Market_Africa,0.0051081427
+Product Quantity_Team Golf New England Patriots Putter Grip,0.0050720978
+order_month,0.0050283372
+Product Quantity_Bridgestone e6 Straight Distance NFL San Dieg,0.0049974197
+Category Name_Consumer Electronics,0.004992384
+Type_PAYMENT,0.00496314
+order_day,0.0049448693
+Department Name_Outdoors,0.0049182577
+Category Name_Accessories,0.004890492
+Product Quantity_Merrell Women's Siren Mid Waterproof Hiking B,0.004848586
+Customer Longitude,0.0048371884
+Category Name_Fishing,0.004807554
+Product Quantity_Bridgestone e6 Straight Distance NFL Tennesse,0.0047961376
+Department Name_Discs Shop,0.004757638
+Product Quantity_Clicgear Rovic Cooler Bag,0.004753269
+Product Quantity_Titleist Pro V1x High Numbers Personalized Go,0.004751181
+Product Quantity_Glove It Urban Brick Golf Towel,0.0047061713
+Order Status_PROCESSING,0.0046001626
+Customer Segment_Consumer,0.0044863736
+Category Name_Baseball & Softball,0.0044635697
+Product Quantity_Polar Loop Activity Tracker,0.004365657
+Product Quantity_Columbia Men's PFG Anchor Tough T-Shirt,0.004359693
+Product Quantity_Brooks Women's Ghost 6 Running Shoe,0.004271819
+order_year,0.0042368355
+Product Quantity_GoPro HERO3+ Black Edition Camera,0.004198728
+Product Quantity_Polar FT4 Heart Rate Monitor,0.0041560433
+Category Name_DVDs,0.0041408953
+Category Name_Golf Balls,0.004108552
+Product Quantity_TYR Boys' Team Digi Jammer,0.0040996857
+Product Quantity_Field & Stream Sportsman 16 Gun Fire Safe,0.004098782
+Category Name_Cleats,0.004029721
+Product Quantity_Titleist Pro V1x Golf Balls,0.0040241745
+Product Quantity_Under Armour Men's Compression EV SL Slide,0.0039904574
+Product Quantity_LIJA Women's Mid-Length Panel Golf Shorts,0.003988442
+Product Quantity_Titleist Pro V1x High Numbers Golf Balls,0.003934339
+Product Quantity_Glove It Women's Mod Oval Golf Glove,0.0038994793
+Product Quantity_LIJA Women's Eyelet Sleeveless Golf Polo,0.0038875795
+Product Quantity_Glove It Women's Imperial Golf Glove,0.003882054
+Category Name_Hockey,0.00384097
+Market_Europe,0.003794611
+Product Quantity_LIJA Women's Argyle Golf Polo,0.0037867585
+Product Quantity_TaylorMade White Smoke IN-12 Putter,0.003759882
+Product Quantity_Nike Men's Kobe IX Elite Low Basketball Shoe,0.0037569047
+Product Quantity_adidas Men's F10 Messi TRX FG Soccer Cleat,0.0037115277
+Product Quantity_Titleist Small Wheeled Travel Cover,0.0037066194
+Category Name_Health and Beauty,0.0036998861
+Product Quantity_Under Armour Women's Micro G Skulpt Running S,0.0036895406
+Customer Latitude,0.0036583669
+Product Quantity_Hirzl Men's Hybrid Golf Glove,0.0035371152
+Category Name_Music,0.0035089653
+Product Quantity_Glove It Women's Mod Oval 3-Zip Carry All Gol,0.0034808007
+Product Quantity_Under Armour Women's Ignite PIP VI Slide,0.0034735347
+Category Name_Cardio Equipment,0.0034344934
+Product Quantity_Top Flite Women's 2014 XL Hybrid,0.0033774152
+Product Quantity_Pelican Maverick 100X Kayak,0.003317082
+Product Quantity_adidas Youth Germany Black/Red Away Match Soc,0.0032508718
+Product Quantity_Garmin Approach S4 Golf GPS Watch,0.0032492294
+Shipping Mode_First Class,0.0032431926
+Product Quantity_Bridgestone e6 Straight Distance NFL Carolina,0.003211875
+Category Name_Soccer,0.0032050253
+Product Quantity_Nike Women's Legend V-Neck T-Shirt,0.0031728013
+Product Quantity_Hirzl Women's Hybrid Golf Glove,0.003129397
+Product Quantity_Merrell Women's Grassbow Sport Waterproof Hik,0.0031111843
+Product Quantity_Merrell Women's Grassbow Sport Hiking Shoe,0.0030830253
+Category Name_Hunting & Shooting,0.003056266
+Product Quantity_TaylorMade Women's RBZ SL Rescue,0.0029923045
+Category Name_Lacrosse,0.0028601247
+Product Quantity_Titleist Pro V1 High Numbers Personalized Gol,0.0028024106
+Product Quantity_The North Face Women's Recon Backpack,0.0027928846
+Product Quantity_ENO Atlas Hammock Straps,0.0027895237
+Product Quantity_Cleveland Golf Women's 588 RTX CB Satin Chrom,0.0027848952
+Product Quantity_Team Golf Texas Longhorns Putter Grip,0.0027729403
+Product Quantity_Nike Men's Comfort 2 Slide,0.002731686
+Category Name_Golf Shoes,0.0026662645
+Product Quantity_Diamondback Boys' Insight 24 Performance Hybr,0.0026561958
+Product Quantity_Team Golf St. Louis Cardinals Putter Grip,0.0026253322
+Category Name_Baby ,0.0026004459
+Product Quantity_Bag Boy Beverage Holder,0.002566246
+Product Quantity_Total Gym 1400,0.0025340607
+Product Quantity_Cleveland Golf Collegiate My Custom Wedge 588,0.0024506086
+Product Quantity_insta-bed Neverflat Air Mattress,0.0023170335
+Category Name_Men's Golf Clubs,0.0023070904
+Category Name_Tennis & Racquet,0.0023055838
+Product Quantity_Bag Boy M330 Push Cart,0.0023004313
+Category Name_Fitness Accessories,0.002224506
+Product Quantity_Nike Women's Free 5.0 TR FIT PRT 4 Training S,0.002223715
+Product Quantity_Nike Kids' Grade School KD VI Basketball Shoe,0.002083075
+Product Quantity_MDGolf Pittsburgh Penguins Putter,0.0020281624
+Product Quantity_adidas Brazuca 2014 Official Match Ball,0.001984028
+Product Quantity_Under Armour Women's Ignite Slide,0.0019095106
+Product Quantity_Team Golf Tennessee Volunteers Putter Grip,0.0017461944
+Product Quantity_Diamondback Girls' Clarity 24 Hybrid Bike 201,0.0016847653
+Product Quantity_Bushnell Pro X7 Jolt Slope Rangefinder,0.0016431265
+Category Name_Golf Bags & Carts,0.0016165527
+Product Quantity_Ogio Race Golf Shoes,0.0015993702
+Product Quantity_LIJA Women's Button Golf Dress,0.0014954169
+Product Quantity_Yakima DoubleDown Ace Hitch Mount 4-Bike Rack,0.0014648911
+Product Quantity_Garmin Forerunner 910XT GPS Watch,0.0013723535
+Category Name_Women's Golf Clubs,0.0010801703
+Category Name_As Seen on  TV!,0.000795746
+Product Quantity_SOLE E35 Elliptical,0.00075545476
+Product Quantity_Children's heaters,0.0
+Product Quantity_DVDs ,0.0
+Product Quantity_CDs of rock,0.0
+Category Name_Cameras ,0.0
+Product Quantity_Dell Laptop,0.0
+Shipping Mode_Same Day,0.0
+Market_Pacific Asia,0.0
+Product Quantity_Web Camera,0.0
+Category Name_CDs ,0.0
+Order Status_CLOSED,0.0
+Category Name_Boxing & MMA,0.0
+Product Quantity_Bowflex SelectTech 1090 Dumbbells,0.0
+Category Name_Basketball,0.0
+Product Quantity_Baby sweater,0.0
+Product Quantity_Adult dog supplies,0.0
+Shipping Mode_Standard Class,0.0
+Product Quantity_Toys ,0.0
+Product Quantity_Titleist Club Glove Travel Cover,0.0
+Department Name_Pet Shop,0.0
+Department Name_Health and Beauty ,0.0
+Category Name_Sporting Goods,0.0
+Category Name_Strength Training,0.0
+Product Quantity_Mio ALPHA Heart Rate Monitor/Sport Watch,0.0
+Category Name_Toys,0.0
+Product Quantity_Men's gala suit,0.0
+Product Quantity_Porcelain crafts,0.0
+Product Quantity_Rock music,0.0
+Product Quantity_SOLE E25 Elliptical,0.0
+Product Quantity_Smart watch ,0.0
+Product Quantity_Sports Books ,0.0
+Product Quantity_Stiga Master Series ST3100 Competition Indoor,0.0
+Product Quantity_Summer dresses,0.0
+Product Quantity_Lawn mower,0.0
+Product Quantity_Industrial consumer electronics,0.0
+Category Name_Golf Apparel,0.0
+Category Name_Garden,0.0
+Category Name_Women's Clothing,0.0
+Product Quantity_GolfBuddy VT3 GPS Watch,0.0
+Department Name_Book Shop,0.0
+Product Quantity_First aid kit,0.0
+Product Quantity_Fighting video games,0.0
+Total Sales per Customer,0.0

@@ -8,11 +8,14 @@ from category_encoders.count import CountEncoder
 from sklearn.neural_network import MLPClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
+from xgboost import XGBClassifier
 
-# Read the data
+
+mem_clf_dir = r'D:\\PycharmProjects\\AMMISproject\\SuperImposition\\pretrained_models'
+
+"""# Read the data
 data_path = r'D:\\PycharmProjects\\AMMISproject\\data\\raw\\DataCoSmartSupplyChain\\DataCoSupplyChainDataset.csv'
 processed_data_dir = r'D:\\PycharmProjects\\AMMISproject\\data\\processed_data\\dataco'
-mem_clf_dir = r'D:\\PycharmProjects\\AMMISproject\\SuperImposition\\pretrained_models'
 data = pd.read_csv(data_path, encoding='latin-1')
 
 
@@ -75,23 +78,45 @@ joblib.dump(x_test_std, osp.join(processed_data_dir, 'x_test.joblib'))
 joblib.dump(y_train, osp.join(processed_data_dir, 'y_train.joblib'))
 joblib.dump(y_test, osp.join(processed_data_dir, 'y_test.joblib'))
 
-corr = x_train.corr()
+corr = x_train.corr()"""
+
+
+data_dir = 'D:\\PycharmProjects\\AMMISproject\\data\\processed_data'
+dataset = 'dataco'
+
+x_train_std = joblib.load(osp.join(data_dir, dataset, 'x_train_std.joblib'))
+x_test_std = joblib.load(osp.join(data_dir, dataset, 'x_test_std.joblib'))
+
+x_train = joblib.load(osp.join(data_dir, dataset, 'x_train.joblib'))
+x_test = joblib.load(osp.join(data_dir, dataset, 'x_test.joblib'))
+
+y_train = joblib.load(osp.join(data_dir, dataset, 'y_train.joblib'))
+y_test = joblib.load(osp.join(data_dir, dataset, 'y_test.joblib'))
+
+print('Shape of the training set: ', x_train_std.shape)
+print('Shape of the test set: ', x_test_std.shape)
+print('Shape of the trainigb targets: ', y_train.shape)
 
 # Train a simple MLP
-model = MLPClassifier(hidden_layer_sizes=(64, 64,), max_iter=500,
+
+# batch_size, architecture, learning rate and activation function : 64, (128, 64), 0.01, 'relu - best MLP model 
+
+model = MLPClassifier(hidden_layer_sizes=(128, 64,), max_iter=500,
                       early_stopping=True, validation_fraction=0.2,
-                      random_state=123)
+                      batch_size=64, random_state=123)
 model.fit(x_train_std, y_train)
+
 # Save the classifier
 joblib.dump(model, osp.join(mem_clf_dir, 'mlp_dataco.joblib'))
 
-# Evaluate MLP pretrained_models
+# Evaluate MLP model
 y_prediction = model.predict(x_test_std)
 mlp_acc = accuracy_score(y_test, y_prediction)
 mlp_roc = roc_auc_score(y_test, y_prediction)
 print('Accuracy of the MLP: ', mlp_acc, '\nAUC of the MLP: ', mlp_roc)
 print('MLP performance evaluation: \n', classification_report(y_test, y_prediction))
 
+"""
 # Check if the pretrained_models captures the pattern where each row is a part of an order which has to be delivered as a whole
 y_test = y_test.reset_index(drop=True)
 y_pred_df = pd.DataFrame(y_prediction, index=y_test.index, columns=['prediction'])
@@ -99,18 +124,34 @@ order_id_check = pd.concat([x_test.loc[:, ['Order Id', 'Days for shipment (sched
                             y_test, y_pred_df],
                            axis=1)
 order_id_check[order_id_check.duplicated('Order Id', keep=False)].sort_values(by='Order Id')
+"""
 
 # Train a decision tree
 model = DecisionTreeClassifier(random_state=123)
-model.fit(x_train, y_train)
+model.fit(x_train_std, y_train)
 
 # Save the classifier
 joblib.dump(model, osp.join(mem_clf_dir, 'dt_dataco.joblib'))
 
 
-# Evaluate DT pretrained_models
-y_prediction = model.predict(x_test)
+# Evaluate DT model
+y_prediction = model.predict(x_test_std)
 dt_acc = accuracy_score(y_test, y_prediction)
 dt_roc = roc_auc_score(y_test, y_prediction)
 print('Accuracy of the DT: ', dt_acc, '\nAUC of the DT: ', dt_roc)
 print('DT performance evaluation: \n', classification_report(y_test, y_prediction))
+
+
+# Train XGBoost model
+xgboost_model = XGBClassifier(random_state=123)
+xgboost_model.fit(x_train_std, y_train)
+
+# Save the classifier
+joblib.dump(xgboost_model, osp.join(mem_clf_dir, 'xgboost_dataco.joblib'))
+
+# Evaluate XGBoost model
+y_prediction = xgboost_model.predict(x_test_std)
+xgb_acc = accuracy_score(y_test, y_prediction)
+xgb_roc = roc_auc_score(y_test, y_prediction)
+print('Accuracy of the XGBoost: ', xgb_acc, '\nAUC of the XGBoost: ', xgb_roc)
+print('XGBoost performance evaluation: \n', classification_report(y_test, y_prediction))
